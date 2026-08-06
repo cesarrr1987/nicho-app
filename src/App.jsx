@@ -28,8 +28,8 @@ const T = {
     errBody: "No pudimos generar tu recomendación. Inténtalo otra vez.",
     retry: "Reintentar",
     of: "de",
-    selectHint: "Elige una o varias",
-    pickOne: "Elige una opción",
+    selectHint: "Marca todas las que sientas tuyas",
+    pickOne: "La que más te representa",
     paywallTitle: "Desbloquea NICHO Premium",
     paywallBody: "Ya usaste tus análisis gratis. Con Premium obtienes análisis ilimitados, planes de contenido de 30 días, análisis de productos ganadores y nichos alternativos.",
     paywallCta: "Obtener Premium",
@@ -61,8 +61,8 @@ const T = {
     errBody: "We couldn't generate your recommendation. Try again.",
     retry: "Retry",
     of: "of",
-    selectHint: "Pick one or more",
-    pickOne: "Pick one",
+    selectHint: "Check all that feel like you",
+    pickOne: "Whichever fits best",
     paywallTitle: "Unlock NICHO Premium",
     paywallBody: "You've used your free analyses. Premium gives you unlimited analyses, 30-day content plans, winning-product breakdowns and alternative niches.",
     paywallCta: "Get Premium",
@@ -73,8 +73,8 @@ const T = {
 
 const QUESTIONS = {
   es: [
-    { key: "passion", q: "¿Qué temas te apasionan?", multi: true, options: ["Viajes y lugares", "Moda y estilo", "Fitness y salud", "Tecnología y gadgets", "Belleza y cuidado", "Hogar y decoración", "Comida y recetas", "Finanzas y negocios", "Humor y entretenimiento", "Mascotas", "Espiritualidad / motivación", "Manualidades / DIY"] },
-    { key: "natural", q: "¿Qué se te da naturalmente bien?", hint: "Lo que la gente te elogia o te pide ayuda", multi: true, options: ["Explicar cosas con claridad", "Hacer reír", "Organizar y planear", "Encontrar ofertas y gangas", "Dar consejos", "Crear cosas con las manos", "Contar historias", "Motivar a otros", "Analizar y comparar", "Tener buen ojo estético"] },
+    { key: "passion", q: "¿Qué te apasiona de verdad?", hint: "Marca todo lo que te prenda, no hay límite", multi: true, options: ["Viajes y lugares", "Moda y estilo", "Fitness y deporte", "Tecnología y gadgets", "Belleza y cuidado personal", "Hogar y decoración", "Comida y recetas", "Finanzas y negocios", "Humor y entretenimiento", "Mascotas y animales", "Espiritualidad y motivación", "Manualidades y DIY", "Música y canto", "Baile", "Cine, series y videojuegos", "Arte, dibujo y fotografía", "Autos y motores", "Crianza y familia", "Educación e idiomas", "Oficios y arreglos", "Escribir e historias"] },
+    { key: "natural", q: "¿Qué se te da naturalmente bien?", hint: "Eso que la gente siempre te dice: '¿cómo sabes hacer eso?'", multi: true, options: ["Explicar cosas con claridad", "Hacer reír", "Organizar y planear", "Encontrar ofertas y gangas", "Dar consejos", "Crear cosas con las manos", "Contar historias", "Motivar a otros", "Analizar y comparar", "Tener buen ojo estético", "Cantar o actuar", "Bailar", "Reparar y armar cosas", "Conectar rápido con la gente"] },
     { key: "freeTime", q: "Si tuvieras un día libre total, ¿qué harías por gusto?", multi: false, options: ["Explorar lugares nuevos", "Ver/crear contenido", "Cocinar o crear algo", "Hacer ejercicio", "Aprender algo nuevo", "Compartir con gente/familia", "Comprar o buscar productos"] },
     { key: "work", q: "¿A qué te dedicas hoy?", multi: false, options: ["Empleado/a tiempo completo", "Estudiante", "Emprendedor/a", "Creador/a de contenido", "Busco un cambio / desempleado", "Otro"] },
     { key: "personality", q: "¿Cómo te sientes frente a la cámara?", multi: false, options: ["Me encanta hablar y mostrarme", "Prefiero no salir, solo voz/manos", "Quiero usar IA o sin cara", "Aún no lo sé"] },
@@ -83,8 +83,8 @@ const QUESTIONS = {
     { key: "goal", q: "¿Cuál es tu meta principal?", multi: false, options: ["Ingreso extra", "Reemplazar mi empleo", "Construir una marca", "Probar y aprender"] },
   ],
   en: [
-    { key: "passion", q: "What topics are you passionate about?", multi: true, options: ["Travel & places", "Fashion & style", "Fitness & health", "Tech & gadgets", "Beauty & care", "Home & decor", "Food & recipes", "Finance & business", "Humor & entertainment", "Pets", "Spirituality / motivation", "Crafts / DIY"] },
-    { key: "natural", q: "What are you naturally good at?", hint: "What people compliment you on or ask your help with", multi: true, options: ["Explaining things clearly", "Making people laugh", "Organizing & planning", "Finding deals & bargains", "Giving advice", "Making things by hand", "Telling stories", "Motivating others", "Analyzing & comparing", "Having a good eye for aesthetics"] },
+    { key: "passion", q: "What are you truly passionate about?", hint: "Check everything that lights you up, no limit", multi: true, options: ["Travel & places", "Fashion & style", "Fitness & sports", "Tech & gadgets", "Beauty & personal care", "Home & decor", "Food & recipes", "Finance & business", "Humor & entertainment", "Pets & animals", "Spirituality & motivation", "Crafts & DIY", "Music & singing", "Dance", "Movies, series & gaming", "Art, drawing & photography", "Cars & engines", "Parenting & family", "Education & languages", "Trades & fixing things", "Writing & storytelling"] },
+    { key: "natural", q: "What are you naturally good at?", hint: "What people always say 'wow, how do you know how to do that?' about", multi: true, options: ["Explaining things clearly", "Making people laugh", "Organizing & planning", "Finding deals & bargains", "Giving advice", "Making things by hand", "Telling stories", "Motivating others", "Analyzing & comparing", "Having a good eye for aesthetics", "Singing or performing", "Dancing", "Fixing & building things", "Connecting quickly with people"] },
     { key: "freeTime", q: "On a totally free day, what would you do for fun?", multi: false, options: ["Explore new places", "Watch/create content", "Cook or make something", "Work out", "Learn something new", "Hang out with people/family", "Shop or hunt for products"] },
     { key: "work", q: "What do you do today?", multi: false, options: ["Full-time employee", "Student", "Entrepreneur", "Content creator", "Looking for a change / unemployed", "Other"] },
     { key: "personality", q: "How do you feel in front of the camera?", multi: false, options: ["I love talking & being on screen", "Prefer voice/hands only", "I want to use AI / faceless", "Not sure yet"] },
