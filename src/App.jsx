@@ -358,7 +358,7 @@ export default function App() {
             <div style={S.eyebrow}>★ Premium</div>
             <h2 style={{ ...S.q, marginBottom: 12 }}>{t.paywallTitle}</h2>
             <p style={{ ...S.lead, marginBottom: 24 }}>{t.paywallBody}</p>
-            <button style={{ ...S.cta, width: "100%", marginBottom: 10 }} onClick={() => alert(lang === "es" ? "Aquí conectarás tu pago (Stripe / Gumroad)" : "Connect your payment here (Stripe / Gumroad)")}>{t.paywallCta}</button>
+            <button style={{ ...S.cta, width: "100%", marginBottom: 10 }} >{t.paywallCta}</button>
             <button style={{ ...S.ghost, width: "100%", border: "none" }} onClick={() => setShowPaywall(false)}>{t.paywallLater}</button>
           </div>
         </div>
